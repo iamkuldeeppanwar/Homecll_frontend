@@ -17,8 +17,7 @@ function Reset() {
       email,
       password: resetPasswrod,
     };
-    const reset = await resetUserPassword(resetData);
-    console.log(reset);
+    await resetUserPassword(resetData);
     window.alert("Password Reset Successfully");
     navigate("/login");
   };

@@ -18,7 +18,6 @@ function Login() {
     localStorage.setItem("firstName", loginUserData.data.user.firstName);
     localStorage.setItem("lastName", loginUserData.data.user.lastName);
     navigate("/home");
-    console.log(loginUserData);
   };
 
   return (

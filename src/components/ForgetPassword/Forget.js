@@ -6,8 +6,7 @@ function Forget() {
 
   const forget = async (e) => {
     e.preventDefault();
-    const userEmail = await forgetPassword(email);
-    console.log(userEmail);
+    await forgetPassword({ email });
   };
 
   return (
@@ -17,12 +16,10 @@ function Forget() {
           {" "}
           We will sent link on your Email please check
         </h3>
-        <form action="" onSubmit={forget}>
+        <form onSubmit={forget}>
           <div className="mt-4">
             <div className="mt-4">
-              <label className="block" for="email">
-                Email
-              </label>
+              <label>Email</label>
               <input
                 type="email"
                 placeholder="Email"
