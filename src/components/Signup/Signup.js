@@ -31,6 +31,7 @@ function Signup() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="px-8 py-6 mx-4 mt-4 text-left rounded-lg bg-white shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
+        <h3 className="text-3xl text-center">Sign Up</h3>
         <form action="" onSubmit={signupUser}>
           <div className="mt-4">
             <div>
@@ -89,7 +90,7 @@ function Signup() {
               </button>
             </div>
             <div className="mt-6 text-grey-dark">
-              Already have an account?
+              Already have an account?{" "}
               <Link
                 className="text-blue-600 hover:underline hover:text-indigo-500"
                 to="/login"

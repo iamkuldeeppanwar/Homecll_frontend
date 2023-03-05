@@ -86,7 +86,7 @@ function Home() {
       )}
 
       <div className={`${openSideNav ? " sm:ml-64" : ""}`}>
-        <div className="flex justify-between px-5">
+        <div className="flex lg:flex-row flex-col justify-between px-5">
           <div className="p-2.5 flex items-center rounded-md px-10 duration-300 cursor-pointer bg-gray-700 text-white">
             <i className="bi bi-search text-sm"></i>
             <input
@@ -95,7 +95,7 @@ function Home() {
               className="text-[15px] ml-4 w-full bg-transparent focus:outline-none"
             />
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex justify-between mt-2 lg:mt-0 items-center gap-3">
             <p className="capitalize">
               {localStorage.getItem("firstName")}{" "}
               {localStorage.getItem("lastName")}
@@ -116,8 +116,8 @@ function Home() {
             </p>
           </div>
           <h3 className="text-center">Experience</h3>
-          <div className="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            <p className="text-2xl text-gray-400 dark:text-gray-500">
+          <div className="flex items-center justify-center mb-4 rounded bg-gray-50 dark:bg-gray-800">
+            <p className="text-2xl text-gray-400 dark:text-gray-500 p-2">
               Blitzbud Technologies (February 2022-May 2022) Added access
               control to frontend on the basis of loggedin user permissions, the
               dashboard is shown according to user permissions. I have used

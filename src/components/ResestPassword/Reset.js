@@ -25,9 +25,9 @@ function Reset() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="px-8 py-6 mx-4 mt-4 text-left rounded-lg bg-white shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
+        <h3 className="text-center text-3xl">Reset Password</h3>
         <form action="" onSubmit={passworderFroget}>
           <div className="mt-4">
-            <h3 className="text-center text-xl">Reset Password</h3>
             <div className="mt-4">
               <label className="block" for="email">
                 First Name

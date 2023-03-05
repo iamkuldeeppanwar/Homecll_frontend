@@ -12,7 +12,8 @@ function Forget() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="px-8 py-6 mx-4 mt-4 text-left bg-white rounded-lg shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
-        <h3 className="text-2xl font-bold text-center">
+        <h3 className="text-3xl text-center mb-4">Forget Password</h3>
+        <h3 className=" text-center">
           {" "}
           We will sent link on your Email please check
         </h3>
